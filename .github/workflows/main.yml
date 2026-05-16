@@ -1,0 +1,14 @@
+on:
+workflow_dispatch:
+inputs: 
+log_level:
+description: 'Log level'
+type: choice
+option: 
+- info
+- warning
+- debug
+dry_run:
+description: 'Dry run'
+type: boolean
+default: false
