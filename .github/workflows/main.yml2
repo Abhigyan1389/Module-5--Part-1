@@ -1,0 +1,24 @@
+name: Calculate and Describe Target
+on: 
+push:
+branches:
+- main
+jobs:
+  run-pipeline: 
+  runs-on: ubuntu-latest
+  steps:
+    name: Set up Python
+    uses: actions/setup-pyhton@v5
+    with:
+      python-version: '3.10' 
+      name: Install dependencies
+      run: pip install paqndas numpy
+      name: Run calculation script
+      run:  python calculate_target.py
+       name: Commit and push changes
+       run: 
+         git config --global user.name 'github-actions'
+         git config --global user.email 'actions@github.com'
+         git add target_description.txt
+         git commit -m "Update target variable descriptin
+         git push
