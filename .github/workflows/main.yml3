@@ -1,0 +1,1 @@
+percent_missing = (df.isnull().sum()/len (df))*100
