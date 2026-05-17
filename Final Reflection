@@ -1,0 +1,47 @@
+What role do weights and biases play in the model ?
+
+ 
+
+In a neural model, weights and biases are the main parameters the model learns during training. They control how the network processes input data and makes predictions. Together they allow the neural network to learn patterns from data efficiently.
+
+ 
+
+Why is an activation function required?
+
+ 
+
+Activation function is required as it allows the model to learn complex and nonlinear relationships between customer features and churn behavior.
+
+ 
+
+The activation function introduces nonlinearity which helps the data learn complex patterns, it enables deep learning hence making hidden layers more useful, it helps in classification leading to better churn prediction.
+
+ 
+
+What happens when learning rate is too high or too low ?
+
+ 
+
+The learning rate controls how much the neural network updates it's weights and biases during training. It is one of the most important hyperparameters in the customer churn model.
+
+ 
+
+If the rate is too high it leads to unstable training or overshooting and if it is too low it leads to slow learning or underfitting, ideally the data should have stable coverage and good accuracy
+
+ 
+
+Did your model show signs of underfitting or overfitting? Explain.
+
+ 
+
+ 
+
+The network shows signs of overfitting
+
+ 
+
+The model achieved perfect training accuracy and almost zero training loss which suggests the network may have memorized patterns in the training set
+
+ 
+
+The model is generally strong, but improvements can still be made for better generalization and better churn-class prediction
